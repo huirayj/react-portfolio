@@ -1,0 +1,23 @@
+$primaryColor: #14161a;
+$secondaryColor: #D3D3D3;
+$tertiaryColor: #FFD700;
+$mobileWidth: 640px;
+$tabletWidth: 1366px;
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobileWidth}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tabletWidth}) {
+        @content;
+    }
+}
