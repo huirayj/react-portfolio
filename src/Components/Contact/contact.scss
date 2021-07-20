@@ -66,6 +66,10 @@
         color: $primaryColor;
       }
     }
+    .error-text {
+      color: red;
+      font-size: 20px;
+    }
   }
   .bottom {
     flex: 0.2;

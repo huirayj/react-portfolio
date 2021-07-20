@@ -10,6 +10,7 @@ export const Contact = () => {
     const [nameInput, setNameInput] = useState('');
     const [emailInput, setEmailInput] = useState('');
     const [messageInput, setMessageInput] = useState('');
+    const [errorMessage, setErrorMessage] = useState([]);
 
     const handleChange = (e) => {
         if (e.target.name === 'name') {
@@ -25,6 +26,14 @@ export const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!nameInput) setErrorMessage('Name was empty.');
+        if (!emailInput) setErrorMessage('Email was empty.');
+        if (!messageInput) setErrorMessage('Message was empty.');
+
+        setNameInput('');
+        setEmailInput('');
+        setMessageInput('');
     };
 
     const emailValidation = (email) => {
@@ -60,9 +69,17 @@ export const Contact = () => {
                     <textarea
                         className='textarea'
                         placeholder="Message"
+                        name='message'
+                        value={messageInput}
+                        onChange={handleChange}
                     />
                     <button type="submit">Send</button>
                 </form>
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
             </div>
             <div className="bottom">
                 <div className="iconContainer">
