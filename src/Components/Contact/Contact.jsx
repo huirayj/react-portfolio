@@ -30,6 +30,10 @@ export const Contact = () => {
         if (!nameInput) setErrorMessage('Name was empty.');
         if (!emailInput) setErrorMessage('Email was empty.');
         if (!messageInput) setErrorMessage('Message was empty.');
+        if (!nameInput && !emailInput) setErrorMessage('Name and Email were empty.');
+        if (!nameInput && !messageInput) setErrorMessage('Name and Message were empty.');
+        if (!emailInput && !messageInput) setErrorMessage('Email and Message were empty.');
+        if (!nameInput && !emailInput && !messageInput) setErrorMessage('Form was empty.');
 
         setNameInput('');
         setEmailInput('');
