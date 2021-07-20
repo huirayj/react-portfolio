@@ -1,0 +1,94 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+
+  .top {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input {
+        width: 300px;
+        margin: 10px;
+
+        @include mobile {
+          width: 200px;
+        }
+      }
+
+      .error {
+        border: 3px solid red;
+      }
+
+      .textarea {
+        width: 400px;
+        height: 200px;
+        margin: 15px;
+
+        @include mobile {
+          width: 200px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+  .bottom {
+    flex: 0.2;
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    
+    .iconContainer {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: $primaryColor;
+        margin: 0 15px;
+
+        .icon {
+          font-size: 50px;
+        }
+        &:hover {
+          color: $tertiaryColor;
+        }
+      }
+
+    }
+  }
+}
