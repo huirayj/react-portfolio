@@ -126,7 +126,7 @@ export const Contact = () => {
 						<MailOutlineIcon className='icon' />
 					</a>
 					<a
-						href='https://linkedin.com/in/justin-hui-424bab99'
+						href='https://www.linkedin.com/in/huirayj/'
 						target='_blank'
 						rel='noreferrer'
 					>
