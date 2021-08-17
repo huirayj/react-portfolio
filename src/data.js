@@ -52,6 +52,14 @@ export const database = [
     deployed: 'https://github.com/huirayj/e-commerce-back-end',
     description: 'An activity that involves using Sequelize to manage the data of e-Commerce products.'
   },
+  {
+    id: 2,
+    title: "Book Search Engine",
+    img: `${process.env.PUBLIC_URL}/assets/images/Portfolio/database/book-search-engine.png`,
+    alt: 'Book Search Engine demo.',
+    deployed: 'https://github.com/huirayj/book-search-engine',
+    description: 'A site that searches for books with the help of the Google Books API and saves it to a user profile. The back-end is managed by an Apollo server and GraphQL.'
+  },
 
 ];
 

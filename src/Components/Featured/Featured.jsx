@@ -37,7 +37,7 @@ export const Featured = () => {
 			deployed: 'https://postgrubdash.herokuapp.com/',
 		},
 		{
-			id: '6',
+			id: '3',
 			title: 'TBD',
 			github: 'https://github.com/huirayj',
 			desc: 'Work In Progress.',
