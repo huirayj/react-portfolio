@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+    border-left: 1px solid $secondaryColor;
 
     &.active {
         right: 0;
@@ -45,5 +46,13 @@
                 color: $tertiaryColor;
             }
         }
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    @include mobile {
+        width: 200px;
     }
 }

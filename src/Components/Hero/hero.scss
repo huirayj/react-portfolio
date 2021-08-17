@@ -118,11 +118,16 @@
   .bottom {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 
-    .icon {
-      font-size: 80px;
-      color: white;
+    a {
+      height: fit-content;
+
+      .icon {
+        font-size: 80px;
+        color: white;
+      }
     }
   }
 }

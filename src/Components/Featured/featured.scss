@@ -1,0 +1,180 @@
+@import '../../global.scss';
+
+.featured {
+	background-color: $primaryColor;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+
+	.iconContainer {
+		width: 85%;
+		display: flex;
+		justify-content: space-between;
+
+		.icon {
+			height: 50px;
+			position: absolute;
+			cursor: pointer;
+			color: white;
+			font-size: 50px;
+
+			@include tablet {
+				position: relative;
+				font-size: 100px;
+				color: $secondaryColor;
+			}
+
+			@include mobile {
+				position: relative;
+				font-size: 100px;
+				color: $secondaryColor;
+			}
+
+			&.left {
+				left: 5%;
+
+				@include tablet {
+					left: 3%;
+				}
+
+				@include mobile {
+					left: -40px;
+				}
+			}
+
+			&.right {
+				right: 5%;
+
+				@include tablet {
+					right: 3%;
+				}
+
+				@include mobile {
+					left: 40px;
+				}
+			}
+		}
+	}
+
+	.slider {
+		height: 550px;
+		display: flex;
+		position: absolute;
+		left: 0;
+		transition: all 1s ease-out;
+
+		@include mobile {
+			height: 100vh;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.container {
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.item {
+				width: 1000px;
+				height: 100%;
+				color: $primaryColor;
+				background-color: white;
+				border-radius: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				@include tablet {
+					border-radius: 0px;
+					width: 85%;
+					flex-direction: column-reverse;
+				}
+
+				@include mobile {
+					width: 85%;
+					height: 400px;
+					margin: 15px 0;
+					flex-direction: column-reverse;
+				}
+
+				.left {
+					flex: 3;
+					height: 80%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					@include mobile {
+						flex: 1;
+					}
+
+					.leftContainer {
+						width: 90%;
+						height: 70%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-evenly;
+						padding: 5px;
+
+						a {
+							color: $primaryColor;
+							text-decoration: none;
+
+							&:hover {
+								color: $tertiaryColor;
+								text-shadow: none;
+							}
+						}
+
+						h2 {
+							font-size: 1.4em;
+
+							@include mobile {
+								font-size: 1.1em;
+							}
+						}
+
+						p {
+							font-size: 1.05em;
+
+							@include mobile {
+								font-size: 0.8em;
+							}
+						}
+
+						span {
+							font-size: 12px;
+							font-weight: 600;
+							text-decoration: underline;
+							cursor: pointer;
+						}
+					}
+				}
+				.right {
+					flex: 8;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					overflow: hidden;
+
+					@include mobile {
+						flex: 2;
+					}
+
+					img {
+						width: 600px;
+
+						@include mobile {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

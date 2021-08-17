@@ -1,11 +1,12 @@
 @import "../../../global.scss";
 
 .list {
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 50px;
   padding: 7px;
   border-radius: 10px;
   cursor: pointer;
+  color: $primaryColor;
 
   @include mobile{
     margin-right: 20px;

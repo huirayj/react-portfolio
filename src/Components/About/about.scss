@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.about {
+    color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    padding: 3% 0 1% 0;
+
+    .aboutContainer {
+        width: 75%;
+        height: 85%;
+        background-color: $primaryColor;
+        color: $secondaryColor;
+
+        h1 {
+            padding: 3%;
+            font-size: 1.75em;
+            text-align: center;
+
+            @include mobile {
+                font-size: 1.5em;
+            }
+        }
+
+        p {
+            padding: 3%;
+            font-size: 1.15em;
+
+            @include mobile {
+                font-size: 1.00em;
+            }
+        }
+
+        @include mobile {
+            width: 85%;
+            height: 90%;
+            overflow: hidden;
+        }
+    }
+}

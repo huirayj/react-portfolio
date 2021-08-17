@@ -1,6 +1,6 @@
 export const getCurrPage = () => {
 
-  const pages = ['hero', 'portfolio', 'carousel', 'resume', 'contact'];
+  const pages = ['hero', 'portfolio', 'featured', 'resume', 'contact'];
 
   const { hash } = window.location;
 

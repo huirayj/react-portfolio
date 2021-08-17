@@ -19,7 +19,7 @@ export const Hero = () => {
         <div className='hero' id='hero'>
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/images/avatar.svg" alt="An avatar." />
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/avatar.svg`} alt="An avatar." />
                 </div>
             </div>
             <div className="right">
@@ -32,7 +32,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div className="bottom">
-                <a href='#portfolio'>
+                <a href='#about'>
                     <ExpandMoreIcon className='icon' />
                 </a>
             </div>
