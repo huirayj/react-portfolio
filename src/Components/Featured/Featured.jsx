@@ -32,8 +32,8 @@ export const Featured = () => {
 			github: 'https://github.com/b00000001/PostGrubDash',
 			desc: 'A MERN stack site that utlizes the Stripe payment API.',
 			role: 'Back-end (Models, Schemas). Front-end (React Components and Pages).',
-			img: `${process.env.PUBLIC_URL}/assets/images/featured/postgrubdash.jpg`,
-			alt: 'PostGrudDash demo',
+			img: `${process.env.PUBLIC_URL}/assets/images/Featured/postgrubdash.jpg`,
+			alt: 'PostGrubDash demo',
 			deployed: 'https://postgrubdash.herokuapp.com/',
 		},
 		{
