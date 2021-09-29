@@ -45,7 +45,7 @@ export const Resume = () => {
             <div className="bottom">
                 <h2>Download Resume</h2>
                 <div className="resumeContainer">
-                    <a href="https://drive.google.com/file/d/1To2210F1l4kqHE4IZPeT2-cw9Ri4IwSf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/file/d/13Ce_u46vb2KhxeWM2T4IVf5abq-112-7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <GetAppIcon className='icon' />
                     </a>
                 </div>

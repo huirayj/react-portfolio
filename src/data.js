@@ -28,10 +28,19 @@ export const javascript = [
 export const styling = [
   {
     id: 0,
-    title: "TBD",
-    img: `${process.env.PUBLIC_URL}/assets/images/Featured/work-in-progress.jpg`,
+    title: "Blogr Landing Page",
+    img: `${process.env.PUBLIC_URL}/assets/images/Portfolio/styling/blogr.png`,
     alt: 'Work in Progress.',
-    deployed: 'https://github.com/huirayj/restaurant-landing-page'
+    deployed: 'https://huirayj.github.io/fm-blogr-landing-page/',
+    description: 'Frontend Mentor junior level exercise using CSS Grid.'
+  },
+  {
+    id: 0,
+    title: "Sunnyside Agency Landing Page",
+    img: `${process.env.PUBLIC_URL}/assets/images/Portfolio/styling/sunnyside.png`,
+    alt: 'Work in Progress.',
+    deployed: 'https://huirayj.github.io/fm-sunnyside-agency-landing-page/',
+    description: 'Frontend Mentor junior level exercise using CSS Grid and flexbox.'
   },
 ];
 
